@@ -32,3 +32,20 @@ def get_min():
     if not stack:
         return -1
     return min_element
+
+
+if __name__ == "__main__":
+    push(3)
+    print(get_min())  # Output: 3
+    push(5)
+    print(get_min())  # Output: 3
+    push(2)
+    print(get_min())  # Output: 2
+    push(1)
+    print(get_min())  # Output: 1
+    pop()
+    print(get_min())  # Output: 2
+    pop()
+    print(get_min())  # Output: 3
+    pop()
+    print(get_min())  # Output: 3
